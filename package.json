@@ -1,0 +1,53 @@
+{
+  "name": "mileto",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "prepare": "husky install",
+    "start": "next start",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx --report-unused-disable-directives --max-warnings 0",
+    "generate": "plop",
+    "format": "prettier --write .",
+    "formatter": "npm run lint --fix"
+  },
+  "dependencies": {
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@emotion/types": "^0.7.0",
+    "@next/eslint-plugin-next": "^14.2.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vercel/style-guide": "^6.0.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "plop": "^4.0.1",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2",
+    "zod": "^3.23.8"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --ext .js,.ts,.jsx,.tsx --report-unused-disable-directives --max-warnings 0 --fix"
+    ],
+    "*.{js,ts,jsx,tsx,json}": [
+      "prettier --write ."
+    ]
+  }
+}
