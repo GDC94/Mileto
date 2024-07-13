@@ -35,13 +35,17 @@ export default (plop) => {
     actions: [
       {
         type: "addMany",
-        destination: "src/components/ui/{{ComponentFolder ComponentType}}/{{name}}",
+        destination:
+          "src/components/ui/{{ComponentFolder ComponentType}}/{{name}}",
         base: "plop-templates/component",
         templateFiles: "plop-templates/component/*.hbs",
       },
     ],
   });
-  plop.setHelper("ComponentFolder", (componentType) => ComponentFolder[componentType]);
+  plop.setHelper(
+    "ComponentFolder",
+    (componentType) => ComponentFolder[componentType],
+  );
 
   plop.setHelper("storyPath", (componentType) => StoryPath[componentType]);
 };
