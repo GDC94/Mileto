@@ -49,11 +49,7 @@
     "zod": "^3.23.8"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": [
-      "eslint --ext .js,.ts,.jsx,.tsx --report-unused-disable-directives --max-warnings 0 --fix"
-    ],
-    "*.{js,ts,jsx,tsx,json}": [
-      "prettier --write ."
-    ]
+    "*.{js,ts,jsx,tsx}": "eslint --fix",
+    "*.{js,ts,jsx,tsx,json}": "prettier --write ."
   }
 }

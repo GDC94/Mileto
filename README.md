@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mileto
 
-## Getting Started
+Mileto is a web application built with Next.js, Styled Components, TypeScript, Jest, Zod, and React Testing Library. This project aims to provide a solid foundation for modern and scalable web applications.
 
-First, run the development server:
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Styled Components**: Library for CSS-in-JS styling.
+- **TypeScript**: Typed superset of JavaScript for scalability and maintainability.
+- **Jest**: Testing framework for JavaScript.
+- **Zod**: TypeScript-first schema validation library.
+- **React Testing Library**: Tool for effectively testing React components.
+
+## Project Structure
+
+The main project structure is as follows:
+src/
+├── app/
+│   ├── components/
+│   └── pages/
+├── styles/
+├── tests/
+└── utils/
+
+- **src/app/components**: Reusable components.
+- **src/app/pages**: Next.js application pages.
+- **src/styles**: Global styles and themes.
+- **src/tests**: Unit and integration tests.
+- **src/utils**: Utility functions.
+
+## Installation
+
+To get started with development, first clone the repository and then install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/your-username/mileto.git
+cd mileto
+npm install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+	•	npm run dev: Starts the development server.
+	•	npm run build: Builds the application for production.
+	•	npm start: Starts the production server.
+	•	npm test: Runs unit tests with Jest.
+	•	npm run lint: Lints the code for errors and best practices.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Testing Setup
 
-## Learn More
+The project is configured to use Jest and React Testing Library for testing. You can add new tests in the src/tests folder.
 
-To learn more about Next.js, take a look at the following resources:
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import MyComponent from '../app/components/MyComponent';
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+test('renders a message', () => {
+  render(<MyComponent />);
+  expect(screen.getByText('Hello, world!')).toBeInTheDocument();
+});
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License.
