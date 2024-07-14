@@ -16,8 +16,8 @@ Mileto is a web application built with Next.js, Styled Components, TypeScript, J
 The main project structure is as follows:
 src/
 ├── app/
-│   ├── components/
-│   └── pages/
+│ ├── components/
+│ └── pages/
 ├── styles/
 ├── tests/
 └── utils/
@@ -61,3 +61,4 @@ test('renders a message', () => {
 License
 
 This project is licensed under the MIT License.
+```
