@@ -2,6 +2,10 @@
   "name": "mileto",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/GDC94/Mileto",
+  "maintainers": [
+    "Germán Derbes Catoni <germanderbescatoni@gmail.com>"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
