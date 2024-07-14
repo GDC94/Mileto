@@ -14,6 +14,8 @@ Mileto is a web application built with Next.js, Styled Components, TypeScript, J
 ## Project Structure
 
 The main project structure is as follows:
+
+```bash
 src/
 ├── app/
 │ ├── components/
@@ -21,6 +23,7 @@ src/
 ├── styles/
 ├── tests/
 └── utils/
+```
 
 - **src/app/components**: Reusable components.
 - **src/app/pages**: Next.js application pages.
