@@ -1,18 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-/*
 @font-face {
-  font-family: 'N27';
-  src: url('fonts/n27-bold-webfont.eot'),
-  url('fonts/n27-bold-webfont.woff2') format('woff2'),
-  url('fonts/n27-bold-webfont.woff') format('woff'),
-  url('fonts/n27-bold-webfont.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Nastup';
+  src:  url('fonts/Nastup-Basic.eot'),url('fonts/Nastup-Basic.otf'),
+  url('fonts/Nastup-Basic.woff2') format('woff2'),
+  url('fonts/Nastup-Basic.woff') format('woff'),
+  url('fonts/Nastup-Basic.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
-*/
+
 
 *,
 *::before,
@@ -24,8 +22,8 @@ const GlobalStyles = createGlobalStyle`
   padding: 0;
 }
 html {
-  --body-bgcolor: hsl(225deg 10% 7.84%);
-
+  --body-bgcolor: #fff;
+  font-family: 'Nastup', sans-serif;
   scrollbar-gutter: stable;
   overscroll-behavior-y: none;
 }
@@ -38,15 +36,14 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
-  background-color: #000;
   font-size: 16px;
   overflow-x: hidden !important;
   overflow-y: hidden;
-  cursor: crosshair;
   margin: 0;
   padding: 0;
   overscroll-behavior-y: none;
-  font-family: "N27", sans-serif;
+  font-family: 'Nastup',sans-serif;
+
   
 
   &.enable-scroll{
@@ -90,9 +87,6 @@ h6 {
       padding-block-end: 0;
       padding-inline-start: 0;
       padding-inline-end: 0;
-}
-h1 {
-  font-family: 'N27', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
