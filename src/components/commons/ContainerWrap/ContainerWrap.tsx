@@ -1,4 +1,4 @@
-import classes from "@/app/utils/classes";
+import classes from "@/utils/classes";
 
 import { Container } from "./ContainerWrap.styles";
 
