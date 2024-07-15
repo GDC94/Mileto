@@ -22,7 +22,6 @@ const GlobalStyles = createGlobalStyle`
   padding: 0;
 }
 html {
-  --body-bgcolor: #fff;
   font-family: 'Nastup', sans-serif;
   scrollbar-gutter: stable;
   overscroll-behavior-y: none;
@@ -43,6 +42,7 @@ body {
   padding: 0;
   overscroll-behavior-y: none;
   font-family: 'Nastup',sans-serif;
+  background-color: #ffffff;
 
   
 
