@@ -4,7 +4,6 @@ function FrontPage() {
   return (
     <Wrapper>
       <h1>Projects</h1>
-      <h2>wwww</h2>
       <Caja>
         <Cajita />
         <CajitaTwo />
