@@ -37,12 +37,11 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   overflow-x: hidden !important;
-  overflow-y: hidden;
   margin: 0;
   padding: 0;
   overscroll-behavior-y: none;
   font-family: 'Nastup',sans-serif;
-  background-color: #ffffff;
+  background-color: #e7e4df;
 
   
 
